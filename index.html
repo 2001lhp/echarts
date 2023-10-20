@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <script src="./js/echarts.min.js"></script>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/china.js"></script>
+    <script src="./js/map.js"></script>
+</head>
+
+<body>
+    <div class="view">
+        <div class="column">
+            <div class="overview panel">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <h4>2,190</h4>
+                            <span>
+                                <i class="iconfont icon-dot" style="color: #006cff;"></i>
+                                设备总数
+                            </span>
+                        </li>
+                        <li>
+                            <h4>190</h4>
+                            <span>
+                                <i class="iconfont icon-dot" style="color: #6acca3;"></i>
+                                季度新增
+                            </span>
+                        </li>
+                        <li>
+                            <h4>3,001</h4>
+                            <span>
+                                <i class="iconfont icon-dot" style="color: #6acca3;"></i>
+                                运营设备
+                            </span>
+                        </li>
+                        <li>
+                            <h4>108</h4>
+                            <span>
+                                <i class="iconfont icon-dot" style="color: #ed3f35;"></i>
+                                异常设备
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="monitor panel">
+                <div class="inner">
+                    <div class="tabs">
+                        <span class="active">实时交易详情</span>
+                        <span>实时注册详情</span>
+                    </div>
+                    <div class="content">
+                        <div class="head">
+                            <span class="col">交易时间</span>
+                            <span class="col">交易地区</span>
+                            <span class="col">交易金额</span>
+                        </div>
+                        <div class="marquee-view">
+                            <div class="marquee">
+                                <div class="row">
+                                    <span class="col">20180701</span>
+                                    <span class="col">11北京市昌平⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000001</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20190601</span>
+                                    <span class="col">北京市昌平区城⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000002</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20190704</span>
+                                    <span class="col">北京市昌平区建材城⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000003</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20180701</span>
+                                    <span class="col">北京市昌平区建路⾦燕⻰写字楼</span>
+                                    <span class="col">1000004</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20190701</span>
+                                    <span class="col">北京市昌平区建材城⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000005</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20190701</span>
+                                    <span class="col">北京市昌平区建材城⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000006</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20190701</span>
+                                    <span class="col">北京市昌平区建⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000007</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row"><span class="col">20190701</span>
+                                    <span class="col">北京市昌平区建材城⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000008</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20190701</span>
+                                    <span class="col">北京市昌平区建材城⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000009</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20190710</span>
+                                    <span class="col">北京市昌平区建材城⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000010</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="head">
+                            <span class="col">注册时间</span>
+                            <span class="col">注册地区</span>
+                            <span class="col">注册性别</span>
+                        </div>
+                        <div class="marquee-view">
+                            <div class="marquee">
+                                <div class="row">
+                                    <span class="col">20180701</span>
+                                    <span class="col">11北京市昌平⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000001</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20190601</span>
+                                    <span class="col">北京市昌平区城⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000002</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20190704</span>
+                                    <span class="col">北京市昌平区建材城⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000003</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20180701</span>
+                                    <span class="col">北京市昌平区建路⾦燕⻰写字楼</span>
+                                    <span class="col">1000004</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20190701</span>
+                                    <span class="col">北京市昌平区建材城⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000005</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20190701</span>
+                                    <span class="col">北京市昌平区建材城⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000006</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20190701</span>
+                                    <span class="col">北京市昌平区建⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000007</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row"><span class="col">20190701</span>
+                                    <span class="col">北京市昌平区建材城⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000008</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20190701</span>
+                                    <span class="col">北京市昌平区建材城⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000009</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">20190710</span>
+                                    <span class="col">北京市昌平区建材城⻄路⾦燕⻰写字楼</span>
+                                    <span class="col">1000010</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="point panel">
+                <div class="inner">
+                    <h3>销售地分布统计</h3>
+                    <div class="chart">
+                        <div class="pie"></div>
+                        <div class="data">
+                            <div class="item">
+                                <h4>320,11</h4>
+                                <span>
+                                    <span class="iconfont icon-dot"></span>
+                                    销量总数
+                                </span>
+                            </div>
+                            <div class="item">
+                                <h4>12%</h4>
+                                <span>
+                                    <span class="iconfont icon-dot" style="color : #f60;"></span>
+                                    同比增长
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="map">
+                <h3>
+                    <span class="iconfont icon-cube"></span>
+                    设备数据统计
+                </h3>
+                <div class="geo"></div>
+            </div>
+            <div class="users panel">
+                <div class="inner">
+                    <h3>全国⽤户总量统计</h3>
+                    <div class="chart">
+                        <div class="bar"></div>
+                        <div class="data">
+                            <div class="item">
+                                <h4>120,899</h4>
+                                <span>
+                                    <i class="icon-dot" style="color: #ed3f35"></i>
+                                    ⽤户总量
+                                </span>
+                            </div>
+                            <div class="item">
+                                <h4>248</h4>
+                                <span>
+                                    <i class="icon-dot" style="color: #eacf19"></i>
+                                    本⽉新增
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="order panel">
+                <div class="inner">
+                    <div class="filter">
+                        <span class="active">365天</span>
+                        <span>90天</span>
+                        <span>30天</span>
+                        <span>24小时</span>
+                    </div>
+                    <div class="data">
+                        <div class="item">
+                            <h4>20,301,987</h4>
+                            <span>
+                                <i class="icon-dot" style="color: #ed3f35;"></i>
+                                订单量
+                            </span>
+                        </div>
+                        <div class="item">
+                            <h4>99834</h4>
+                            <span>
+                                <i class="icon-dot" style="color: #eacf19;"></i>
+                                销售额(万元)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sales panel">
+                <div class="inner">
+                    <div class="caption">
+                        <h3>销售额统计</h3>
+                        <span class="active">年</span>
+                        <span>季</span>
+                        <span>⽉</span>
+                        <span>周</span>
+                    </div>
+                    <div class="chart">
+                        <div class="label">单位:万</div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="channel panel">
+                    <div class="inner">
+                        <h3>渠道分布</h3>
+                        <div class="radar"></div>
+                    </div>
+                </div>
+                <!-- 销售进度 -->
+                <div class="quarter panel">
+                    <div class="inner">
+                        <h3>⼀季度销售进度</h3>
+                        <div class="chart">
+                            <div class="gauge"></div>
+                            <div class="label">50<small> %</small></div>
+                        </div>
+                        <div class="data">
+                            <div class="item">
+                                <h4>1,321</h4>
+                                <span><i class="iconfont icon-dot"></i> 销售额(万元)</span>
+                            </div>
+                            <div class="item">
+                                <h4>1,321</h4>
+                                <span><i class="iconfont icon-dot"></i> 销售额(万元)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top panel">
+                <div class="inner">
+                    <div class="all">
+                        <h3>全国热榜</h3>
+                        <ul>
+                            <li>
+                                <i class="icon-cup1" style="color: #d93f36;"></i>
+                                可爱多
+                            </li>
+                            <li>
+                                <i class="icon-cup2" style="color: #68d8fe;"></i>
+                                娃哈啥
+                            </li>
+                            <li>
+                                <i class="icon-cup3" style="color: #4c9bfd;"></i>
+                                喜之郎
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="province">
+                        <h3>各省热销 <i class="date">// 近30日 //</i></h3>
+                        <div class="data">
+                            <ul class="sup">
+                                <li>
+                                    <span>北京</span>
+                                    <span>25,179 <s class="icon-up"></s></span>
+                                </li>
+                                <li>
+                                    <span>河北</span>
+                                    <span>23,252 <s class="icon-down"></s></span>
+                                </li>
+                                <li>
+                                    <span>上海</span>
+                                    <span>20,760 <s class="icon-up"></s></span>
+                                </li>
+                                <li>
+                                    <span>江苏</span>
+                                    <span>23,252 <s class="icon-down"></s></span>
+                                </li>
+                                <li>
+                                    <span>山东</span>
+                                    <span>20,760 <s class="icon-up"></s></span>
+                                </li>
+                            </ul>
+                            <ul class="sub">
+                                <!-- <li><span></span><span> <s class="icon-up"></s></span></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/index.js"></script>
